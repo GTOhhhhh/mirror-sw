@@ -3,18 +3,18 @@ id: "services"
 
 content:
   title: "Our main services"
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec quam nibh elit pellentesque velit netus suspendisse. Sed enim, pretium, montes, in ut dolor urna."
+  text: "We provide custom software development services to help you build and maintain your business."
   cards:
     - image: "images/services-web-development.png"
-      title: "Web development"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+      title: "API development"
+      text: "Experience seamless integration and accelerated growth with our top-notch API development services. Our expert team creates robust, secure, and scalable APIs tailored to your specific needs, ensuring seamless communication between your applications, third-party services, and internal systems.  "
       button:
         label: "Learn more"
         url: "#"
 
     - image: "images/services-web-development.png"
-      title: "Web development"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+      title: "Data Engineering"
+      text: "Optimize your data management with our end-to-end data engineering services.  Our skilled team excels in designing and implementing efficient databases, crafting precise data models, and seamlessly integrating and transforming data from various sources."
       button:
         label: "Learn more"
         url: "#"

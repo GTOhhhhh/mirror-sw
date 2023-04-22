@@ -2,15 +2,15 @@ baseURL: "https://www.example.com/"
 theme: "up-business-theme"
 languageCode: "en-us"
 
-title: "Up Business"
+title: "Mirror Software"
 
 # googleAnalytics: ""
 
 summaryLength: 20
 
 params:
-  title: "Up Business"
-  description: "We specialize in providing services to desing websites, applications, build and maintain business for customers."
+  title: "Mirror Software"
+  description: "We specialize in providing custom software services in data engineering, machine learning and API development."
   images: 
     - "images/hero-image.png"
 
@@ -21,21 +21,19 @@ params:
     backgroundColor: "#FFFFFF"
     faviconColor: "#000000"
 
-  social:
-    dribbble: "#"
-    instagram: "#"
-    facebook: "#"
-    twitter: "#"
+  # social:
+  #   dribbble: "#"
+  #   instagram: "#"
+  #   facebook: "#"
+  #   twitter: "#"
 
   location:
-    - "3891 Ranchview Dr. Richardson, California 62639"
-    - "4517 Washington Ave. Manchester, Kentucky 39495"
+    - "Suite 223, Level 2/111 Harrington St, The Rocks NSW 2000"
 
   contact:
-    - "trungkienspktnd@gamail.com"
-    - "207.555.0119"
+    - "spiegel.karl@gmail.com"
 
-  copyright: "© 2022 Up Business All Rights Reserved"
+  copyright: "© 2022 Mirror Software All Rights Reserved"
 
   postProcess: false
 
@@ -45,17 +43,17 @@ menus:
       url: "/#hero"
       weight: 1
 
-    - name: "How we work"
-      url: "/#"
-      weight: 2
+    # - name: "How we work"
+    #   url: "/#"
+    #   weight: 2
 
-    - name: "Our team"
-      url: "/#"
-      weight: 3
+    # - name: "Our team"
+    #   url: "/#"
+    #   weight: 3
 
-    - name: "Pricing"
-      url: "/#"
-      weight: 4
+    # - name: "Pricing"
+    #   url: "/#"
+    #   weight: 4
 
     - name: "Blog"
       url: "/blog"
