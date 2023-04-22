@@ -14,14 +14,14 @@ content:
 
     - image: "images/services-web-development.png"
       title: "Data Engineering"
-      text: "Optimize your data management with our end-to-end data engineering services.  Our skilled team excels in designing and implementing efficient databases, crafting precise data models, and seamlessly integrating and transforming data from various sources."
+      text: "Optimize your data management with our end-to-end data engineering services.  Our skilled team excels in designing and implementing efficient databases, crafting precise data models and pipelines, while seamlessly integrating and transforming data from various sources."
       button:
         label: "Learn more"
         url: "#"
 
     - image: "images/services-web-development.png"
-      title: "Web development"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+      title: "Machine Learning"
+      text: "Unlock the power of machine learning with our advanced algorithms and MLOps expertise. Our team is adept at feature engineering, model selection, model training and deployment of cutting-edge solutions tailored to your machine learning needs."
       button:
         label: "Learn more"
         url: "#"

@@ -5,11 +5,11 @@ content:
   title: "Mirror Software"
   text: "Discover the future of data-driven decision making with our comprehensive software solutions, offering cutting-edge data engineering, analytics, machine learning, and API development services."
 
-  buttonPrimary:
-    label: "How we work"
-    url: "#"
+  # buttonPrimary:
+  #   label: "How we work"
+  #   url: "#"
 
-  buttonSecondary:
-    label: "Let's talk"
-    url: ""
+  # buttonSecondary:
+  #   label: "Let's talk"
+  #   url: ""
 
