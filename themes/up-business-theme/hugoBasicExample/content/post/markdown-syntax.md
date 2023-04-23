@@ -1,8 +1,8 @@
 +++
-author = "Hugo Authors"
-title = "Markdown Syntax Guide"
-date = "2019-03-11"
-description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+author = "Karl Spiegel"
+title = "PDM: Python Dependency Management"
+date = "2023-03-11"
+description = "PDM for dependency management and resolution"
 tags = [
     "markdown",
     "css",
@@ -16,133 +16,53 @@ series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 +++
 
-This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+PDM is the latest package offering dependency resolution and management in the Python ecosystem. How does it compare to other more established tools such as Poetry and Pip?
+\
+&nbsp;
 <!--more-->
 
-## Headings
+## The Next Generation Python Package Management Tool
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+Python developers are always on the lookout for the best package management tools to enhance their workflow. PDM (Python Development Master) is a next-generation Python package management tool that aims to streamline your development process. It was originally built for personal use, but if you're struggling with existing tools like Pipenv or Poetry, PDM might just have the features you need.
 
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
+PDM is not just a package manager; it also enhances your development workflow in various ways. The most significant benefit is its ability to manage packages in a similar manner to npm, without the need to create a virtualenv at all!
+\
+&nbsp;
+## Project Structure
 
-## Paragraph
-
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
-
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
-
-## Blockquotes
-
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
-
-#### Blockquote without attribution
-
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use *Markdown syntax* within a blockquote.
-
-#### Blockquote with attribution
-
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
-## Tables
-
-Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
-
-   Name | Age
---------|------
-    Bob | 27
-  Alice | 23
-
-#### Inline Markdown within tables
-
-| Italics   | Bold     | Code   |
-| --------  | -------- | ------ |
-| *italics* | **bold** | `code` |
-
-## Code Blocks
-
-#### Code block with backticks
-
-```html
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
+PDM follows the PEP 582 project structure, which simplifies the management of dependent libraries. A typical project structure looks like this:
 ```
+foo
+    __pypackages__
+        3.8
+            lib
+                bottle
+    myscript.py
+```
+\
+&nbsp;
+## Features Highlights:
+Some of the standout features of PDM include:
 
-#### Code block indented with four spaces
+PEP 582 local package installer and runner with no virtualenv involved.
+Simple and fast dependency resolver, perfect for large binary distributions.
+PEP 517 build backend.
+Flexible and powerful plug-in system.
+PEP 621 project metadata format.
+Opt-in centralized installation cache, similar to pnpm.
+Why Not Virtualenv?
+Traditional Python packaging tools often act as virtualenv managers to isolate project environments. However, things can get tricky with nested virtual environments. PEP 582 provides a way to decouple the Python interpreter from project environments, making it a more attractive option.
+\
+&nbsp;
+## Installation:
+To install PDM, you'll need Python version 3.7 or higher. PDM offers an installation script for Linux/Mac and Windows that installs it into an isolated environment. You can also use alternative installation methods, such as Homebrew for MacOS, Scoop for Windows, pipx, or pip under a user site.
 
-    <!doctype html>
-    <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <title>Example HTML5 Document</title>
-    </head>
-    <body>
-      <p>Test</p>
-    </body>
-    </html>
+## Quickstart:
+To get started with PDM, follow these steps:
 
-#### Code block with Hugo's internal highlight shortcode
-{{< highlight html >}}
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-{{< /highlight >}}
+1. Initialize a new PDM project with `pdm init`. This creates a `pyproject.toml` file.
+2. Install dependencies into the pypackages directory with `pdm add <dependencies>`.
+3. Run your script with PEP 582 support by setting the environment variable with `eval "$(pdm --pep582)"`.
 
-## List Types
+PDM is a powerful package management tool that simplifies the development process and provides various benefits over traditional Python package management methods. Give it a try and see if it's the right fit for your projects!
 
-#### Ordered List
-
-1. First item
-2. Second item
-3. Third item
-
-#### Unordered List
-
-* List item
-* Another item
-* And another item
-
-#### Nested list
-
-* Fruit
-  * Apple
-  * Orange
-  * Banana
-* Dairy
-  * Milk
-  * Cheese
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
