@@ -28,10 +28,10 @@ params:
   #   twitter: "#"
 
   location:
-    - "Suite 223, Level 2/111 Harrington St, The Rocks NSW 2000"
-
-  contact:
     - "spiegel.karl@gmail.com"
+
+  # contact:
+  #   - "spiegel.karl@gmail.com"
 
   copyright: "© 2022 Mirror Software All Rights Reserved"
 
